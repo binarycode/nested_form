@@ -8,7 +8,7 @@ Note: this gem extends the simple_form gem (https://github.com/plataformatec/sim
 
 Add it to your Gemfile
   
-  gem "nested_form", :git => "git://github.com/jdmorani/nested_form.git"
+  gem "nested_form", :git => "git://github.com/binarycode/nested_form.git"
 
 Run
   

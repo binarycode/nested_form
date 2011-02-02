@@ -29,7 +29,8 @@ class SimpleForm::FormBuilder
     output = '<div class="fields">'.html_safe
     if block.nil?
       block = lambda do |f|
-        contents = @template.render :partial => "#{association.class.name.downcase}_fields", :locals => {:f => f}
+        klass_name = association.class.name.downcase
+        contents = @template.render :partial => "#{klass_name.pluralize}/#{klass_name}_fields", :locals => {:f => f}
         template.concat(contents)
         contents        
       end
